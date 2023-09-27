@@ -5,14 +5,14 @@ type User struct {
 	FirstName string
 	LastName  string
 	Email     string
+	Password  string // gonna be hashed in the db
 }
 
 // implement the commented stuff later after other things are done
 
 type Student struct {
 	User
-	CurrentSemester int
-	// Subjects        []string
+	StudentCourse Course
 	// Grades          []StudentGrade
 	// GPA             float64
 	// DateOfBirth     string
@@ -20,7 +20,6 @@ type Student struct {
 
 type Teacher struct {
 	User
-	// DateOfBirth string
 }
 
 type Admin struct {
